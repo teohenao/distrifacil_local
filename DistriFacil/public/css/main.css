@@ -1,0 +1,164 @@
+
+
+
+/*h1,h2,h3,h4,h5,h6
+{
+  font-family: 'lobster two',cursive;
+}
+/* nav--------------------
+.main-sidebar { 
+  background-color: black !important }
+
+
+.logo-lg{ 
+  background-color: black !important }
+
+.logo{ 
+  background-color: black !important }
+.wrapper { 
+  background-color: black !important }
+
+
+
+.text-center { 
+  background-color: black !important }
+
+
+ }
+*/
+.left-side {
+    background-color: #367fa9; 
+}
+.navbar-static-top { 
+  background-color: #367fa9    ! important }
+.navbar{
+  background: #367fa9 ! important;
+
+}
+.main-title
+{
+
+  color: #B3B6B7!important;
+  font-size: 28px;
+}
+/*footer------------------*/
+footer{
+  background-color:white;
+  text-align: center;
+}
+footer p {
+  text-align: justify;
+}
+ul.redes li
+{
+  display: inline-block;
+}
+ul.redes a{
+  color: white;
+}
+/* Catalogo -------------*
+
+*/
+#products {
+position: relative;
+max-width: 100%;
+width: 100%;
+}
+img
+ {
+width: 200px;
+max-width: 100%;
+height: 200px;
+}
+.white-panel {
+position: absolute;
+background: white;
+box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+padding: 10px;
+}
+.white-panel h1 {
+font-size: 1em;
+}
+.white-panel h1 a {
+color: #A92733;
+}
+.white-panel:hover {
+box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+margin-top: -5px;
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+/* Detalle producto ---------*/
+.skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side  {
+    background-color: #367fa9!important;
+}
+.product-block
+{
+  background: white;
+  border-radius: 1em;
+  padding: 1em;
+}+
+/*slider.........................*/
+.navbar{
+  margin-bottom: 0;
+
+}
+/*carrito----------------*/
+.table-carrito{
+  background: white;
+  border-radius: 1em;
+  margin-bottom: 30px;
+  padding: 1em;
+}
+.table-carrito img
+{
+  width: 100px;
+  max-width: 30%;
+  height:auto;
+}
+.page{
+  background:white;
+  border-radius: 1em;
+  margin-bottom: 30px;
+  padding: 1em;
+}
+
+
+body{
+ background-color: #367fa9;
+ }
+    
+
+
+html {
+  font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+@media (min-width: 1200px) {
+body{
+ /* Ubicación de la imagen */
+  background-image: url("https://image.freepik.com/foto-gratis/tabla-de-madera-la-sobremesa-vacia-de-fondo-borroso_1253-1584.jpg");
+ 
+/* Para dejar la imagen de fondo centrada, vertical y
+ horizontalmente */
+ background-position: center center;
+ /* Para que la imagen de fondo no se repita */
+ background-repeat: no-repeat;
+ /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+ background-attachment: fixed;
+ /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+ background-size: cover;
+ /* Se muestra un color de fondo mientras se está cargando la imagen
+ de fondo o si hay problemas para cargarla */
+ background-color: #367fa9;
+ }
+    } 
+
+.skin-blue .sidebar-menu>li:hover>a, .skin-blue .sidebar-menu>li.active>a {
+    color: #fff;
+    background:  #367fa9;
+    border-left-color:  #367fa9;
+}

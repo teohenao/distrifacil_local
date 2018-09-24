@@ -1,0 +1,56 @@
+body
+{
+   background-image: url("https://www.wallpapersin4k.org/wp-content/uploads/2017/04/Repeat-Wallpaper-12.jpg");
+   background-repeat:repeat;
+  
+}
+.page{
+  background: white;
+  border-radius: 1em;
+  margin-bottom: 30px;
+  padding: 1em;
+}
+
+
+footer
+{
+
+    padding:20px;
+}
+.navbar{
+  background: orange ;
+}
+.main-title
+{
+
+  color: black!important;
+  font-size: 25px;
+}
+img
+ {
+width: 10px;
+
+
+}
+
+.page
+{
+    background:oran;
+    border-radius:1em;
+    margin:1em;
+    min-height:500px;
+    padding:1em;
+}
+
+
+.icon-home
+{
+    color: #666;
+    font-size: 60px;
+    margin: 20px;
+}
+
+.btn-home-admin
+{
+    font-size:25px;
+}
