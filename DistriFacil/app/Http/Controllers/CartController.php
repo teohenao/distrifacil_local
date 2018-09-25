@@ -1,9 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-
+use Ill
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Product;
@@ -74,7 +72,7 @@ class CartController extends Controller
         if(count(\Session::get('carrito')) <= 0) return redirect()->route('home');
         $carrito = \Session::get('carrito');
         $total = $this->total();
-      
+
 
         return view('store.order-detail', compact('carrito', 'total','order'));
     }

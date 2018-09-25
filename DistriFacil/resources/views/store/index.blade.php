@@ -2,7 +2,7 @@
 @extends('store.template')
 @section('content')
  <div class="wrapper">
-     @if(Auth::check())     
+     @if(Auth::check())
      <header class="main-header">
       <a href="{{route('home')}}" class="logo">
         <span class="logo-mini"><b>DF</b></span>
@@ -15,7 +15,7 @@
       </form>
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
-          <li><a href="{{route('carrito-show')}}"></a></li>
+           <li><a href="{{route('carrito-show')}}"><i class="fa fa-shopping-cart"></i></a></li>
           <li class="d">
             <a>
              {{ Auth::user()->nombre }}
@@ -44,13 +44,13 @@
           </a>
         </li>
       </ul>
-      
+
     </div>
   </nav>
 </header>
 @endif
 @if(Auth::check())
-@if (auth()->user()->tipo == 'administrador')   
+@if (auth()->user()->tipo == 'administrador')
 <aside class="main-sidebar">
   <section class="sidebar">
     <ul class="sidebar-menu">
@@ -96,7 +96,6 @@
 @else
 <aside class="main-sidebar">
   <section class="sidebar">
-    <p>si desea solicitar una visita de el vehiculo de productos de click en solicitar visita</p>
 
     <ul class="sidebar-menu">
       <li>
@@ -135,7 +134,7 @@
 @endif
 <!--Contenido-->
 <!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">  
+<div class="content-wrapper">
   <!-- Main content -->
   <!-- /.box-header -->
   <div class="box-body">

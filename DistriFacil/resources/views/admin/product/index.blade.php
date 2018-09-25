@@ -5,26 +5,26 @@
 @section('content')
 
 <div class="wrapper">
-   <header class="main-header">
-      <a href="{{route('home')}}" class="logo">
-        <span class="logo-mini"><b>DG</b></span>
-        <span class="logo-lg"><b> 
-            DistriFacil
-        </b></span>
-    </a>
-    <nav class="navbar navbar-static-top" role="navigation">
-        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-          <span class="sr-only">Navegación</span>
-      </a>
-  </form>
-  <div class="navbar-custom-menu">
+ <header class="main-header">
+  <a href="{{route('home')}}" class="logo">
+    <span class="logo-mini"><b>DF</b></span>
+    <span class="logo-lg"><b>
+        DISTRI FACIL
+    </b></span>
+</a>
+<nav class="navbar navbar-static-top" role="navigation">
+    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+      <span class="sr-only">Navegación</span>
+  </a>
+</form>
+<div class="navbar-custom-menu">
     <ul class="nav navbar-nav">
       <li><a href="{{route('carrito-show')}}"></a></li>
       <li class="d">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-           {{ Auth::user()->user }}
-       </a>
-   </ul>
+         {{ Auth::user()->nombre }}
+     </a>
+ </ul>
 </div>
 </nav>
 </header>
@@ -36,30 +36,27 @@
       <li>
         <a href="{{ route('admin.user.index') }}">
           <i class="fa fa"></i> <span>CLIENTES</span>
-          <small class="label pull-right bg-green">CL</small>
       </a>
   </li>
   <li>
     <a href="{{ route('admin.product.index') }}">
       <i class="fa fa"></i> <span>PRODUCTOS</span>
-      <small class="label pull-right bg-red">PR</small>
   </a>
 </li>
 <li>
     <a href="{{ route('admin.order.index') }}">
       <i class="fa fa"></i> <span>PEDIDOS</span>
-      <small class="label pull-right bg-yellow">VR</small>
   </a>
 </li>
 <li>
     <a href="{{ route('admin.user.edit', Auth::user()) }}">
-      <i class="fa fa"></i> <span>editar perfil</span>
+      <i class="fa fa"></i> <span>EDITAR PERFIL</span>
 
   </a>
 </li>
 <li>
     <a href="{{ route('logout') }}">
-      <i class="fa fa"></i> <span>finalizar sesion</span>
+      <i class="fa fa"></i> <span>FINALIZAR SESION</span>
 
   </a>
 </li>
@@ -69,10 +66,9 @@
 </aside>
 
 
-
 <!--Contenido-->
 <!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">  
+<div class="content-wrapper">
   <!-- Main content -->
   <!-- /.box-header -->
   <div class="box-body">
@@ -117,7 +113,7 @@
 					<thead>
 						<tr>
 							<th>Editar</th>
-						
+
 
 							<th>Nombre</th>
 							<th>Ref</th>
@@ -135,11 +131,11 @@
 										<i class="fa fa-pencil-square"></i>
 									</a>
 								</td>
-							
+
 
 								<td>{{ $product->nombre }}</td>
 								<td>{{ $product->id }}</td>
-								
+
                 <td>{{ $product->tipo}}</td>
                 	<td>
                                     {!! Form::open(['route' => ['admin.product.destroy', $product->direccion]]) !!}
@@ -154,7 +150,7 @@
 					</tbody>
 				</table>
 
-	
+
 
 			</div>
   <?php echo $products->render(); ?>

@@ -11,7 +11,7 @@
 |
 $users = App\User::all();
 	foreach ($users as $user) {
-	Mail::send('emails',['user'=> $user],function($message) use($user){ 
+	Mail::send('emails',['user'=> $user],function($message) use($user){
 $message->from('AdminDtistriFacil@distrifacil.me','administrador');
 $message->to($user->email,$user->nombre)->subject('tenemos novedades para ti' .$user->nombre);
 	});
@@ -26,9 +26,9 @@ $message->to($user->email,$user->nombre)->subject('tenemos novedades para ti' .$
 Route::get('enviar',['as' => 'mail', function(){
 $users = App\User::all();
 	foreach ($users as $user) {
-	Mail::send('emails',['user'=> $user],function($message) use($user){ 
-$message->from('AdminDtistriFacil@distrifacil.me','administrador');
-$message->to($user->email,$user->nombre)->subject('tenemos novedades para ti ' .$user->nombre);
+	Mail::send('emails',['user'=> $user],function($message) use($user){
+$message->from('distrifacilarmenia@gmil.com','La Despensa de la Gaseosa');
+$message->to($user->email,$user->nombre)->subject('tenemos una promocion que te puede interesar ' .$user->nombre);
 	});
 	}
 

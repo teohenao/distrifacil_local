@@ -23,7 +23,7 @@ class SearchController extends Controller
       $products = Product::nombre($request->get('nombre'))->orderBy('id', 'desc')->paginate(5);
 
 
-      return view('store.search', compact('products'));
+      return view('store.index', compact('products'));
     }
     public function show(Product $product)
     {

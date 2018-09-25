@@ -26,10 +26,9 @@ class SaveProductRequest extends Request
         return [
             'nombre'          => 'required',
             'descripcion'   => 'required',
-            'extracto'       => 'required',
-            'precio'         => 'required',
+          
             'imagen'         => 'required',
-    
+
         ];
     }
 }

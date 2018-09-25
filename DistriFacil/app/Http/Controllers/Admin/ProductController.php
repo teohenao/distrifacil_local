@@ -47,10 +47,15 @@ class ProductController extends Controller
      public function store(SaveProductRequest $request)
     {
         $data = [
-            'nombre'          => $request->get('nombre'),
+            'nombre'        => $request->get('nombre'),
+            'tipo'          => $request->get('tipo'),
+            'cantidad'       => $request->get('cantidad'),
             'direccion'     => str_slug($request->get('nombre')),
             'descripcion'   => $request->get('descripcion'),
-            'precio'         => $request->get('precio'),
+            'sabor'         => $request->get('sabor'),
+            'precio_unit'      => $request->get('precio_unit'),
+            'precio_paca'       => $request->get('precio_paca'),
+            'sabor'         => $request->get('sabor'),
             'imagen'         => $request->get('imagen'),
             'visible'       => $request->has('visible') ? 1 : 0
         ];

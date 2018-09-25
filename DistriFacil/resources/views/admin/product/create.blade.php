@@ -7,9 +7,9 @@
 <div class="wrapper">
  <header class="main-header">
   <a href="{{route('home')}}" class="logo">
-    <span class="logo-mini"><b>DG</b></span>
-    <span class="logo-lg"><b> 
-        DistriFacil
+    <span class="logo-mini"><b>DF</b></span>
+    <span class="logo-lg"><b>
+        DISTRI FACIL
     </b></span>
 </a>
 <nav class="navbar navbar-static-top" role="navigation">
@@ -22,7 +22,7 @@
       <li><a href="{{route('carrito-show')}}"></a></li>
       <li class="d">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-         {{ Auth::user()->user }}
+         {{ Auth::user()->nombre }}
      </a>
  </ul>
 </div>
@@ -36,30 +36,27 @@
       <li>
         <a href="{{ route('admin.user.index') }}">
           <i class="fa fa"></i> <span>CLIENTES</span>
-          <small class="label pull-right bg-green">CL</small>
       </a>
   </li>
   <li>
     <a href="{{ route('admin.product.index') }}">
       <i class="fa fa"></i> <span>PRODUCTOS</span>
-      <small class="label pull-right bg-red">PR</small>
   </a>
 </li>
 <li>
     <a href="{{ route('admin.order.index') }}">
       <i class="fa fa"></i> <span>PEDIDOS</span>
-      <small class="label pull-right bg-yellow">VR</small>
   </a>
 </li>
 <li>
     <a href="{{ route('admin.user.edit', Auth::user()) }}">
-      <i class="fa fa"></i> <span>editar perfil</span>
+      <i class="fa fa"></i> <span>EDITAR PERFIL</span>
 
   </a>
 </li>
 <li>
     <a href="{{ route('logout') }}">
-      <i class="fa fa"></i> <span>finalizar sesion</span>
+      <i class="fa fa"></i> <span>FINALIZAR SESION</span>
 
   </a>
 </li>
@@ -69,10 +66,9 @@
 </aside>
 
 
-
 <!--Contenido-->
 <!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">  
+<div class="content-wrapper">
   <!-- Main content -->
   <!-- /.box-header -->
   <div class="box-body">
@@ -120,21 +116,6 @@
 												!!}
 										</div>
 										<div class="form-group">
-												<label for="descripcion">Referencia:</label>
-
-												{!!
-														Form::text(
-																'descripcion',
-																null,
-																array(
-																		'class'=>'form-control',
-																		'placeholder' => 'Ingresa el nombre...',
-																		'autofocus' => 'autofocus'
-																)
-														)
-												!!}
-										</div>
-										<div class="form-group">
 												<label for="cantidad">Cantidad:</label>
 												{!!
 														Form::text(
@@ -164,10 +145,24 @@
 										</div>
 
 												<div class="form-group">
-														<label for="material">Material:</label>
+														<label for="sabor">sabor:</label>
 														{!!
 																Form::text(
-																		'material',
+																		'sabor',
+																		null,
+																		array(
+																				'class'=>'form-control',
+																				'placeholder' => 'Ingresa el sabor...',
+																				'autofocus' => 'autofocus'
+																		)
+																)
+														!!}
+												</div>
+												<div class="form-group">
+														<label for="descripcion">descripcion:</label>
+														{!!
+																Form::text(
+																		'descripcion',
 																		null,
 																		array(
 																				'class'=>'form-control',
@@ -178,10 +173,10 @@
 														!!}
 												</div>
 												<div class="form-group">
-														<label for="alto">altura:</label>
+														<label for="precio_unit">precio unitario:</label>
 														{!!
 																Form::text(
-																		'alto',
+																		'precio_unit',
 																		null,
 																		array(
 																				'class'=>'form-control',
@@ -192,10 +187,10 @@
 														!!}
 												</div>
 												<div class="form-group">
-														<label for="ancho">anchura:</label>
+														<label for="precio_paca">precio paca:</label>
 														{!!
 																Form::text(
-																		'ancho',
+																		'precio_paca',
 																		null,
 																		array(
 																				'class'=>'form-control',
@@ -205,61 +200,7 @@
 																)
 														!!}
 												</div>
-												<div class="form-group">
-														<label for="profundidad">profundidad:</label>
-														{!!
-																Form::text(
-																		'profundidad',
-																		null,
-																		array(
-																				'class'=>'form-control',
-																				'placeholder' => 'Ingresa el nombre...',
-																				'autofocus' => 'autofocus'
-																		)
-																)
-														!!}
-												</div>
-												<div class="form-group">
-														<label for="color">color:</label>
-														{!!
-																Form::text(
-																		'color',
-																		null,
-																		array(
-																				'class'=>'form-control',
-																				'placeholder' => 'Ingresa el nombre...',
-																				'autofocus' => 'autofocus'
-																		)
-																)
-														!!}
-												</div>
-											 <div class="form-group">
-										 			<label for="peso">Peso:</label>
-										 			{!!
-										 					Form::text(
-										 							'peso',
-										 							null,
-										 							array(
-										 									'class'=>'form-control',
-										 									'placeholder' => 'Ingresa el extracto...',
-										 							)
-										 					)
-										 			!!}
-										 	</div>
-                        
-                        <div class="form-group">
-                            <label for="precio">Precio:</label>
-                            {!!
-                                Form::text(
-                                    'precio',
-                                    null,
-                                    array(
-                                        'class'=>'form-control',
-                                        'placeholder' => 'Ingresa el precio...',
-                                    )
-                                )
-                            !!}
-                        </div>
+
                         <div class="form-group">
                             <label for="imagen">Imagen:</label>
                             {!!
