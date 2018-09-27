@@ -1,1 +1,1 @@
-<h1>Prueba de correo Promocional  ppooooor fin</h1>
+<h1>---------aca va la el texto de la promocion-----------</h1>
