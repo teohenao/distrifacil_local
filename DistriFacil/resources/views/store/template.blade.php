@@ -22,7 +22,6 @@
      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
      <link rel = "stylesheet" href= "{{asset('css/main.css')}}">
    </head>
-   <body class="hold-transition skin-blue sidebar-collapse">
 
         @yield('content')
         <!--Fin Contenido-->

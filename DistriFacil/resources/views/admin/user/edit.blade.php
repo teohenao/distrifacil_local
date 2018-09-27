@@ -1,5 +1,6 @@
 
 @extends('store.template')
+ <body class="hold-transition skin-blue sidebar-mini">
 @section('content')
  <div class="wrapper">
      @if(Auth::check())
