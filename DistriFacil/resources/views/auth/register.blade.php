@@ -5,8 +5,8 @@
 <div class="body">
 	<header class="main-header">
 		<a href="{{route('home')}}" class="logo">
-			<span class="logo-mini"><b>DG</b></span>
-			<span class="logo-lg"><b>GLACIAL</b></span>
+			<span class="logo-mini"><b>DF</b></span>
+			<span class="logo-lg"><b>DISTRI FACIL</b></span>
 		</a>
 		<nav class="navbar navbar-static-top" role="navigation">
 			<span class="sr-only">Navegación</span>

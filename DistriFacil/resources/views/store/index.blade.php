@@ -25,29 +25,32 @@
      </nav>
    </header>
    @else
-   <header class="main-header">
-    <a href="{{route('home')}}" class="logo">
-      <span class="logo-mini"><b>DF</b></span>
-      <span class="logo-lg"><b>DISTRI FACIL</b></span>
-    </a>
-    <nav class="navbar navbar-static-top" role="navigation">
-      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-        <span class="sr-only"></span>
-      </a>
-      <div class="navbar-custom-menu">
+   <div class="body">
+    <header class="main-header">
+     <a href="{{route('home')}}" class="logo">
+       <span class="logo-mini"><b>DF</b></span>
+       <span class="logo-lg"><b>DISTRI FACIL</b></span>
+     </a>
+     <nav class="navbar navbar-static-top" role="navigation">
+       <span class="sr-only">Navegación</span>
+     </a>
+     <div class="navbar-custom-menu">
 
-        <ul class="nav navbar-nav">
-         <li>
-          <a href="{{ route('login-get') }}">
-            <i class="fa fa"></i> <span>Iniciar Sesion</span>
+       <ul class="nav navbar-nav">
+        <li>
+         <a href="{{ route('login-get') }}">
+           <i class="fa fa"></i> <span>Iniciar Sesion</span>
 
-          </a>
-        </li>
-      </ul>
+         </a>
+       </li>
+     </ul>
 
-    </div>
-  </nav>
-</header>
+   </div>
+   </nav>
+   </header>
+
+
+
 @endif
 @if(Auth::check())
 @if (auth()->user()->tipo == 'administrador')

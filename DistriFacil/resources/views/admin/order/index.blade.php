@@ -72,6 +72,16 @@
 </aside>
 
 
+<!--Contenido-->
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <!-- Main content -->
+  <!-- /.box-header -->
+  <div class="box-body">
+    <div class="row">
+      <div class="col-md-12">
+
+
 
 
     <div class="container text-center">
@@ -91,9 +101,8 @@
                             <th>Ver Detalle</th>
 
                             <th>Fecha</th>
-                            <th>Usuario</th>
-                            <th>Subtotal</th>
-                    
+                            <th>Cliente</th>
+
                             <th>Total</th>
                             <th>Eliminar</th>
                         </tr>
@@ -116,8 +125,7 @@
                                 </td>
 
                                 <td>{{ $order->created_at }}</td>
-                                <td>{{ $order->user->name . " " . $order->user->nombre }}</td>
-                                <td>${{ number_format($order->subtotal,2) }}</td>
+                                <td>{{ $order->user->nombre }}</td>
 
                                 <td>${{ number_format($order->subtotal + $order->shipping,2) }}</td>
                                 <td>
