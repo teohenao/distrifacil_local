@@ -154,7 +154,7 @@
 			<input type="hidden" name="_method" value="PUT">
 
 	<div class="container text-center">
-		
+
 
 		<div class="page">
 			<div class="table-responsive">
@@ -186,8 +186,8 @@
 							<td>{{ $item->nombre }}</td>
 							<td>{{ $item->sabor}}</td>
 							<td>{{ $item->quantity }}</td>
-							<td>${{ number_format($item->precio,2) }}</td>
-							<td>${{ number_format($item->precio * $item->quantity,2) }}</td>
+							<td>${{ number_format($item->precio,3) }}</td>
+							<td>${{ number_format($item->precio * $item->quantity,3) }}</td>
 
 						</tr>
 					@endforeach

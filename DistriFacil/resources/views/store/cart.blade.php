@@ -181,7 +181,7 @@
 
 								<td>{{ $item->nombre }}</td>
 								<td>{{ $item->sabor }}</td>
-								<td>${{ number_format($item->precio,2) }}</td>
+								<td>${{ number_format($item->precio_paca,3) }}</td>
 								<td>
 									<input
 										type="number"
@@ -200,7 +200,7 @@
 									</a>
 								</td>
 								  <td>{{number_format($item->cantidad - $item->quantity)}}</td>
-                <td>{{number_format($item->precio * $item->quantity,2)}}</td>
+                <td>{{number_format($item->precio_paca * $item->quantity,3)}}</td>
                 <td>
                   <a href="{{route('carrito-delete', $item->direccion) }}" class = "btn btn-danger">
                     <i class = "fa fa-remove"> </i>
@@ -214,7 +214,7 @@
 
 				<h1>
 					<span class="label label-success">
-						Total Compra: ${{ number_format($total,2) }}
+						Total Compra: ${{ number_format($total,3) }}
 					</span>
 				</h1><hr>
 
