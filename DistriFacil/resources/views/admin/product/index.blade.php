@@ -120,8 +120,8 @@
 						<tr>
 
 							<th>Nombre</th>
-							<th>Ref</th>
-              <th>Tipo</th>
+							<th>sabor</th>
+              <th>cantidad</th>
               <th>Editar</th>
               <th>Eliminar</th>
 
@@ -134,9 +134,9 @@
 
 
 								<td align="left">{{ $product->nombre }}</td>
-								<td align="left">{{ $product->id }}</td>
+								<td align="left">{{ $product->sabor}}</td>
 
-                <td align="left">{{ $product->tipo}}</td>
+                <td align="left">{{ $product->cantidad}}</td>
                 <td align="left">
                   <a href="{{ route('admin.product.edit', $product->direccion) }}" class="btn btn-primary">
                     <i class="fa fa-pencil-square"></i>

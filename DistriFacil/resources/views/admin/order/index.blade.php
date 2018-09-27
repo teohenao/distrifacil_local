@@ -93,7 +93,7 @@
                             <th>Fecha</th>
                             <th>Usuario</th>
                             <th>Subtotal</th>
-                            <th>Pago</th>
+                    
                             <th>Total</th>
                             <th>Eliminar</th>
                         </tr>
