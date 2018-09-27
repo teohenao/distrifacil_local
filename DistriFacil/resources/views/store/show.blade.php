@@ -165,7 +165,7 @@
             <h4>{{ $product->descripcion }}</h4>
         </div>
         <h1>
-          <span class="label label-success"> Precio: ${{ number_format($product->precio_paca,3) }}</span>
+          <span class="label label-success"> Precio: ${{ number_format($product->precio,3) }}</span>
         </h1><hr>
 
 

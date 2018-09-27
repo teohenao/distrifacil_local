@@ -195,7 +195,7 @@
 
 
 
-						<h3>Total: ${{ number_format($total, 2) }}</h3>
+						<h3>Total: ${{ number_format($total, 3) }}</h3>
 
 				<hr>
 				<p>

@@ -23,8 +23,7 @@ class CreateProductsTable extends Migration {
 			$table->string('tipo');
 			$table->string('sabor');
 			$table->string('descripcion');
-			$table->decimal('precio_unit');
-			$table->decimal('precio_paca');
+			$table->decimal('precio');
 			$table->string('imagen');
 			$table->boolean('visible');
 			$table->timestamps();

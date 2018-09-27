@@ -86,9 +86,9 @@
 
     <div class="container text-center">
         <div class="page-header">
-            <h1>
-                <i class="fa fa-shopping-cart"></i> VENTAS
-            </h1>
+            <h2>
+                 VENTAS
+            </h2>
         </div>
 
         <div class="page">
@@ -127,7 +127,7 @@
                                 <td>{{ $order->created_at }}</td>
                                 <td>{{ $order->user->nombre }}</td>
 
-                                <td>${{ number_format($order->subtotal + $order->shipping,2) }}</td>
+                                <td>${{ number_format($order->subtotal + $order->shipping,3) }}</td>
                                 <td>
                                     {!! Form::open(['route' => ['admin.order.destroy', $order->id]]) !!}
                         <button onClick="return confirm('Eliminar registro?')" class="btn btn-danger">

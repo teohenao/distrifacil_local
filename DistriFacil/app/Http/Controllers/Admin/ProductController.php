@@ -53,8 +53,8 @@ class ProductController extends Controller
             'direccion'     => str_slug($request->get('nombre')),
             'descripcion'   => $request->get('descripcion'),
             'sabor'         => $request->get('sabor'),
-            'precio_unit'      => $request->get('precio_unit'),
-            'precio_paca'       => $request->get('precio_paca'),
+
+            'precio'       => $request->get('precio_paca'),
             'sabor'         => $request->get('sabor'),
             'imagen'         => $request->get('imagen'),
             'visible'       => $request->has('visible') ? 1 : 0

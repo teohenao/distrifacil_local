@@ -40,7 +40,7 @@ public function getOrder(){
     	{
     	    $subtotal = 0;
     	    foreach($carrito as $item){
-    	        $subtotal += $item->precio_paca * $item->quantity;
+    	        $subtotal += $item->precio * $item->quantity;
 
 
     	    }
@@ -60,7 +60,7 @@ public function getOrder(){
     	{
     		OrderItem::create([
     			'quantity' => $item->quantity,
-    			'precio' => $item->precio_paca,
+    			'precio' => $item->precio,
     			'product_id' => $item->id,
     			'order_id' => $order_id
     		]);

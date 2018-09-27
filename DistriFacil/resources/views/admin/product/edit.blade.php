@@ -180,25 +180,12 @@
                                       )
                                   !!}
                               </div>
+
                               <div class="form-group">
-                                  <label for="precio_unit">precio unitario:</label>
+                                  <label for="precio">precio paca:</label>
                                   {!!
                                       Form::text(
-                                          'precio_unit',
-                                          null,
-                                          array(
-                                              'class'=>'form-control',
-                                              'placeholder' => 'Ingresa el nombre...',
-                                              'autofocus' => 'autofocus'
-                                          )
-                                      )
-                                  !!}
-                              </div>
-                              <div class="form-group">
-                                  <label for="precio_paca">precio paca:</label>
-                                  {!!
-                                      Form::text(
-                                          'precio_paca',
+                                          'precio',
                                           null,
                                           array(
                                               'class'=>'form-control',
