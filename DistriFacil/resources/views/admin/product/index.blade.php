@@ -136,7 +136,7 @@
 								<td align="left">{{ $product->nombre }}</td>
 								<td align="left">{{ $product->sabor}}</td>
 
-                <td align="left">{{ $product->cantidad}}</td>
+                <td align="left">{{ $product->cantidad}} pacas</td>
                 <td align="left">
                   <a href="{{ route('admin.product.edit', $product->direccion) }}" class="btn btn-primary">
                     <i class="fa fa-pencil-square"></i>

@@ -8,7 +8,7 @@ class Product extends Model
 {
     protected $table = 'products';
 
-	protected $fillable = ['nombre', 'direccion', 'sabor', 'descripcion', 'cantidad', 'tipo', 'precio_paca', 'precio_unit', 'imagen', 'visible'];
+	protected $fillable = ['nombre', 'direccion', 'sabor', 'descripcion', 'cantidad', 'tipo', 'precio', 'imagen', 'visible'];
 
 
 
