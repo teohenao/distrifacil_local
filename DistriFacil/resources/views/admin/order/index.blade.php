@@ -34,6 +34,12 @@
   <section class="sidebar">
     <ul class="sidebar-menu">
       <li>
+     <a href="{{ route('mail') }}">
+       <i class="fa fa"></i> <span>ENVIAR OFERTA</span>
+
+     </a>
+   </li>
+      <li>
         <a href="{{ route('admin.user.index') }}">
           <i class="fa fa"></i> <span>CLIENTES</span>
       </a>
@@ -112,7 +118,7 @@
                                 <td>{{ $order->created_at }}</td>
                                 <td>{{ $order->user->name . " " . $order->user->nombre }}</td>
                                 <td>${{ number_format($order->subtotal,2) }}</td>
-                                <td>{{ $order->pago }}</td>
+
                                 <td>${{ number_format($order->subtotal + $order->shipping,2) }}</td>
                                 <td>
                                     {!! Form::open(['route' => ['admin.order.destroy', $order->id]]) !!}

@@ -24,7 +24,7 @@
 				<form method="POST" action="/auth/register">
 					{!! csrf_field() !!}
 					<div class="form-group">
-						<label for="tipod">Tipo d:</label>
+						<label for="tipod">Tipo de documento:</label>
 
 						{!! Form::radio('tipod', 'documento', true) !!} documento
 						{!! Form::radio('tipod', 'NIT') !!} NIT
@@ -52,10 +52,10 @@
 						<label for="nombre_negocio">Nombre del negocio</label>
 						<input class="form-control" type="text" name="nombre_negocio" value="{{ old('nombre_negocio') }}">
 
-						
 
-					</div> 
-					
+
+					</div>
+
 					<div class="page">
 						<div class="form-group">
 							<label for="email">Correo</label>
@@ -70,17 +70,17 @@
 							<label for="password">Password</label>
 							<input class="form-control" type="password" name="password">
 						</div>
-						
+
 						<div class="form-group">
 							<button class="btn btn-primary" type="submit">Crear cuenta</button>
 						</div>
 					</div>
 				</div>
-				
+
 
 			</form>
 		</div>
-		
+
 	</div>
 </div>
 

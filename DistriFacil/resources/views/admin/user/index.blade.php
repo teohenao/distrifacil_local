@@ -34,6 +34,12 @@
   <section class="sidebar">
     <ul class="sidebar-menu">
       <li>
+     <a href="{{ route('mail') }}">
+       <i class="fa fa"></i> <span>ENVIAR OFERTA</span>
+
+     </a>
+   </li>
+      <li>
         <a href="{{ route('admin.user.index') }}">
           <i class="fa fa"></i> <span>CLIENTES</span>
       </a>
@@ -107,32 +113,31 @@
         </h2></p>
         <hr>
         <div class="table-responsive">
-            <table class="table table-striped table-bordered table-hover">
+            <table class="table table-striped table-bordered table-hover ">
                 <thead align="text-center">
                     <tr>
-                        <th>Editar</th>
                         <th>Nombre</th>
                         <th>negocio</th>
                         <th>direccion</th>
                         <th>celular</th>
+                        <th>Editar</th>
                         <th>Eliminar</th>
 
                     </tr>
                 </thead>
-                <tbody>
+                <tbody body>
                     @foreach($users as $user)
                     <tr>
-                      <td>
-                        <a href="{{ route('admin.user.edit', $user) }}" class="btn btn-primary">
-                            <i class="fa fa-pencil-square-o"></i>
-                        </a>
-                    </td>
-
-                    <td>{{ $user->nombre }}</td>
-                    <td>{{ $user->nombre_negocio }}</td>
-                    <td>{{ $user->direccionr }}</td>
-                    <td>{{ $user->telefonor }}</td>
-                    <td>
+                    <td align="left">{{ $user->nombre }}</td>
+                    <td align="left">{{ $user->nombre_negocio }}</td>
+                    <td align="left">{{ $user->direccionr }}</td>
+                    <td align="left">{{ $user->telefonor }}</td>
+                    <td align="left">
+                      <a href="{{ route('admin.user.edit', $user) }}" class="btn btn-primary">
+                          <i class="fa fa-pencil-square-o"></i>
+                      </a>
+                  </td>
+                    <td align="left">
                         {!! Form::open(['route' => ['admin.user.destroy', $user]]) !!}
                         <input type="hidden" name="_method" value="DELETE">
                         <button onClick="return confirm('Eliminar registro?')" class="btn btn-danger">

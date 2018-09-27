@@ -34,6 +34,12 @@
   <section class="sidebar">
     <ul class="sidebar-menu">
       <li>
+     <a href="{{ route('mail') }}">
+       <i class="fa fa"></i> <span>ENVIAR OFERTA</span>
+
+     </a>
+   </li>
+      <li>
         <a href="{{ route('admin.user.index') }}">
           <i class="fa fa"></i> <span>CLIENTES</span>
       </a>
@@ -82,9 +88,9 @@
 
         <div class="container text-center">
             <div class="page-header">
-                <h1>
-                  Agregar nuevo Administrador
-              </h1>
+                <h2>
+                  Agregar nuevo usuario
+              </h2>
           </div>
           <div class="row">
             <div class="col-md-offset-3 col-md-6">
@@ -159,7 +165,7 @@
                                         !!}
                                     </div>
                                     <div class="form-group">
-                                        <label for="nombre_negocio">ingrese su cargo en la empresa:</label>
+                                        <label for="nombre_negocio">nombre negocio:</label>
                                         {!!
                                             Form::text(
                                                 'nombre_negocio',
@@ -222,8 +228,8 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="tipo">Tipo de usuario:</label>
-                                                        {!! Form::radio('tipo', 'administrador',true) !!} Administrador
-                                                        {!! Form::radio('tipo', 'cliente') !!} CLiente
+                                                        {!! Form::radio('tipo', 'administrador') !!} Administrador
+                                                        {!! Form::radio('tipo', 'cliente',true) !!} CLiente
                                                     </div>
                                                     <div class="form-group">
                                                         {!! Form::submit('Crear', array('class'=>'btn btn-primary')) !!}

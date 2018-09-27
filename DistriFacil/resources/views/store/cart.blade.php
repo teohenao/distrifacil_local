@@ -100,7 +100,7 @@
     <ul class="sidebar-menu">
       <li>
         <a href="#">
-          <i class="fa fa"></i> <span>Solicitar Visita</span>
+          <i class="fa fa"></i> <span>SOLICITAR VISITA</span>
 
         </a>
       </li>
@@ -218,7 +218,7 @@
 						Total Compra: ${{ number_format($total,2) }}
 					</span>
 				</h1><hr>
-				
+
 
       </div>
 

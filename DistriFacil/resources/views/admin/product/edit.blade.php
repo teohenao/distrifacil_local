@@ -34,6 +34,12 @@
   <section class="sidebar">
     <ul class="sidebar-menu">
       <li>
+     <a href="{{ route('mail') }}">
+       <i class="fa fa"></i> <span>ENVIAR OFERTA</span>
+
+     </a>
+   </li>
+      <li>
         <a href="{{ route('admin.user.index') }}">
           <i class="fa fa"></i> <span>CLIENTES</span>
       </a>
@@ -85,10 +91,10 @@
 
 		<div class="container text-center">
 			<div class="page-header">
-				<h1>
-					<i class="fa fa-shopping-cart"></i>
-					PRODUCTOS <small></small>
-				</h1>
+				<h2>
+
+				editar {{$product->nombre}} <small></small>
+      </h2>
 			</div>
 
 			<div class="row">
