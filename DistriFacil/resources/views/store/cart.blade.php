@@ -199,7 +199,7 @@
 										<i class="fa fa-refresh"> actualizar</i>
 									</a>
 								</td>
-								  <td>{{number_format($item->cantidad - $item->quantity)}}</td>
+								  <td>{{number_format($item->cantidad - $item->quantity)}} pacas</td>
                 <td>{{number_format($item->precio * $item->quantity,3)}}</td>
                 <td>
                   <a href="{{route('carrito-delete', $item->direccion) }}" class = "btn btn-danger">
